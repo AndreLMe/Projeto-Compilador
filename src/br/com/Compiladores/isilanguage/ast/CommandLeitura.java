@@ -1,6 +1,6 @@
-package br.com.professorisidro.isilanguage.ast;
+package br.com.Compiladores.isilanguage.ast;
 
-import br.com.professorisidro.isilanguage.datastructures.IsiVariable;
+import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
 
 public class CommandLeitura extends AbstractCommand {
 

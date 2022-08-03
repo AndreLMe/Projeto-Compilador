@@ -1,16 +1,6 @@
 // Generated from IsiLang.g4 by ANTLR 4.7.1
-package br.com.professorisidro.isilanguage.parser;
+package br.com.Compiladores.isilanguage.parser;
 
-	import br.com.professorisidro.isilanguage.datastructures.IsiSymbol;
-	import br.com.professorisidro.isilanguage.datastructures.IsiVariable;
-	import br.com.professorisidro.isilanguage.datastructures.IsiSymbolTable;
-	import br.com.professorisidro.isilanguage.exceptions.IsiSemanticException;
-	import br.com.professorisidro.isilanguage.ast.IsiProgram;
-	import br.com.professorisidro.isilanguage.ast.AbstractCommand;
-	import br.com.professorisidro.isilanguage.ast.CommandLeitura;
-	import br.com.professorisidro.isilanguage.ast.CommandEscrita;
-	import br.com.professorisidro.isilanguage.ast.CommandAtribuicao;
-	import br.com.professorisidro.isilanguage.ast.CommandDecisao;
 	import java.util.ArrayList;
 	import java.util.Stack;
 
@@ -22,6 +12,17 @@ import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
+
+import br.com.Compiladores.isilanguage.ast.AbstractCommand;
+import br.com.Compiladores.isilanguage.ast.CommandAtribuicao;
+import br.com.Compiladores.isilanguage.ast.CommandDecisao;
+import br.com.Compiladores.isilanguage.ast.CommandEscrita;
+import br.com.Compiladores.isilanguage.ast.CommandLeitura;
+import br.com.Compiladores.isilanguage.ast.IsiProgram;
+import br.com.Compiladores.isilanguage.datastructures.IsiSymbol;
+import br.com.Compiladores.isilanguage.datastructures.IsiSymbolTable;
+import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
+import br.com.Compiladores.isilanguage.exceptions.IsiSemanticException;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class IsiLangLexer extends Lexer {

@@ -1,16 +1,16 @@
 grammar IsiLang;
 
 @header{
-	import br.com.professorisidro.isilanguage.datastructures.IsiSymbol;
-	import br.com.professorisidro.isilanguage.datastructures.IsiVariable;
-	import br.com.professorisidro.isilanguage.datastructures.IsiSymbolTable;
-	import br.com.professorisidro.isilanguage.exceptions.IsiSemanticException;
-	import br.com.professorisidro.isilanguage.ast.IsiProgram;
-	import br.com.professorisidro.isilanguage.ast.AbstractCommand;
-	import br.com.professorisidro.isilanguage.ast.CommandLeitura;
-	import br.com.professorisidro.isilanguage.ast.CommandEscrita;
-	import br.com.professorisidro.isilanguage.ast.CommandAtribuicao;
-	import br.com.professorisidro.isilanguage.ast.CommandDecisao;
+	import br.com.Compiladores.isilanguage.datastructures.IsiSymbol;
+	import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
+	import br.com.Compiladores.isilanguage.datastructures.IsiSymbolTable;
+	import br.com.Compiladores.isilanguage.exceptions.IsiSemanticException;
+	import br.com.Compiladores.isilanguage.ast.IsiProgram;
+	import br.com.Compiladores.isilanguage.ast.AbstractCommand;
+	import br.com.Compiladores.isilanguage.ast.CommandLeitura;
+	import br.com.Compiladores.isilanguage.ast.CommandEscrita;
+	import br.com.Compiladores.isilanguage.ast.CommandAtribuicao;
+	import br.com.Compiladores.isilanguage.ast.CommandDecisao;
 	import java.util.ArrayList;
 	import java.util.Stack;
 }
