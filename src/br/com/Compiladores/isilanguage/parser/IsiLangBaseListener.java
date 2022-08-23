@@ -1,6 +1,17 @@
-// Generated from IsiLang.g4 by ANTLR 4.7.1
+// Generated from IsiLang.g4 by ANTLR 4.10.1
 package br.com.Compiladores.isilanguage.parser;
 
+	import br.com.Compiladores.isilanguage.datastructures.IsiSymbol;
+	import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
+	import br.com.Compiladores.isilanguage.datastructures.IsiSymbolTable;
+	import br.com.Compiladores.isilanguage.exceptions.IsiSemanticException;
+	import br.com.Compiladores.isilanguage.ast.IsiProgram;
+	import br.com.Compiladores.isilanguage.ast.AbstractCommand;
+	import br.com.Compiladores.isilanguage.ast.CommandLeitura;
+	import br.com.Compiladores.isilanguage.ast.CommandEscrita;
+	import br.com.Compiladores.isilanguage.ast.CommandAtribuicao;
+	import br.com.Compiladores.isilanguage.ast.CommandDecisao;
+	import br.com.Compiladores.isilanguage.ast.CommandEnquanto;
 	import java.util.ArrayList;
 	import java.util.Stack;
 
@@ -8,17 +19,6 @@ package br.com.Compiladores.isilanguage.parser;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
-
-import br.com.Compiladores.isilanguage.ast.AbstractCommand;
-import br.com.Compiladores.isilanguage.ast.CommandAtribuicao;
-import br.com.Compiladores.isilanguage.ast.CommandDecisao;
-import br.com.Compiladores.isilanguage.ast.CommandEscrita;
-import br.com.Compiladores.isilanguage.ast.CommandLeitura;
-import br.com.Compiladores.isilanguage.ast.IsiProgram;
-import br.com.Compiladores.isilanguage.datastructures.IsiSymbol;
-import br.com.Compiladores.isilanguage.datastructures.IsiSymbolTable;
-import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
-import br.com.Compiladores.isilanguage.exceptions.IsiSemanticException;
 
 /**
  * This class provides an empty implementation of {@link IsiLangListener},
@@ -98,6 +98,18 @@ public class IsiLangBaseListener implements IsiLangListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCmd(IsiLangParser.CmdContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCmdEnquanto(IsiLangParser.CmdEnquantoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCmdEnquanto(IsiLangParser.CmdEnquantoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

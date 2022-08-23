@@ -1,21 +1,21 @@
-// Generated from IsiLang.g4 by ANTLR 4.7.1
+// Generated from IsiLang.g4 by ANTLR 4.10.1
 package br.com.Compiladores.isilanguage.parser;
 
+	import br.com.Compiladores.isilanguage.datastructures.IsiSymbol;
+	import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
+	import br.com.Compiladores.isilanguage.datastructures.IsiSymbolTable;
+	import br.com.Compiladores.isilanguage.exceptions.IsiSemanticException;
+	import br.com.Compiladores.isilanguage.ast.IsiProgram;
+	import br.com.Compiladores.isilanguage.ast.AbstractCommand;
+	import br.com.Compiladores.isilanguage.ast.CommandLeitura;
+	import br.com.Compiladores.isilanguage.ast.CommandEscrita;
+	import br.com.Compiladores.isilanguage.ast.CommandAtribuicao;
+	import br.com.Compiladores.isilanguage.ast.CommandDecisao;
+	import br.com.Compiladores.isilanguage.ast.CommandEnquanto;
 	import java.util.ArrayList;
 	import java.util.Stack;
 
 import org.antlr.v4.runtime.tree.ParseTreeListener;
-
-import br.com.Compiladores.isilanguage.ast.AbstractCommand;
-import br.com.Compiladores.isilanguage.ast.CommandAtribuicao;
-import br.com.Compiladores.isilanguage.ast.CommandDecisao;
-import br.com.Compiladores.isilanguage.ast.CommandEscrita;
-import br.com.Compiladores.isilanguage.ast.CommandLeitura;
-import br.com.Compiladores.isilanguage.ast.IsiProgram;
-import br.com.Compiladores.isilanguage.datastructures.IsiSymbol;
-import br.com.Compiladores.isilanguage.datastructures.IsiSymbolTable;
-import br.com.Compiladores.isilanguage.datastructures.IsiVariable;
-import br.com.Compiladores.isilanguage.exceptions.IsiSemanticException;
 
 /**
  * This interface defines a complete listener for a parse tree produced by
@@ -82,6 +82,16 @@ public interface IsiLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCmd(IsiLangParser.CmdContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IsiLangParser#cmdEnquanto}.
+	 * @param ctx the parse tree
+	 */
+	void enterCmdEnquanto(IsiLangParser.CmdEnquantoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IsiLangParser#cmdEnquanto}.
+	 * @param ctx the parse tree
+	 */
+	void exitCmdEnquanto(IsiLangParser.CmdEnquantoContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link IsiLangParser#cmdleitura}.
 	 * @param ctx the parse tree

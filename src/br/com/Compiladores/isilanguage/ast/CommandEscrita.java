@@ -16,6 +16,4 @@ public class CommandEscrita extends AbstractCommand {
 	public String toString() {
 		return "CommandEscrita [id=" + id + "]";
 	}
-	
-
 }

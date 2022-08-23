@@ -28,16 +28,25 @@ public class CommandDecisao extends AbstractCommand {
 				str.append(cmd.generateJavaCode());
 			}
 			str.append("}\n");
-		
 		}
 		return str.toString();
 	}
 	@Override
 	public String toString() {
+		StringBuilder lT = new StringBuilder();
+		StringBuilder lF = new StringBuilder();
+
+		for(AbstractCommand v: listaTrue)
+		{
+			lT.append(v);
+		}
+
+		for(AbstractCommand v: listaFalse)
+		{
+			lF.append(v);
+		}
+
 		return "CommandDecisao [condition=" + condition + ", listaTrue=" + listaTrue + ", listaFalse=" + listaFalse
 				+ "]";
 	}
-	
-	
-
 }

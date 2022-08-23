@@ -29,10 +29,16 @@ public class MainClass {
 			parser = new IsiLangParser(tokenStream);
 			
 			parser.prog();
+
+			System.out.println("Dando inicio a compilação.");
+
+			parser.exibeVariaveis();
+
+			parser.exibeComandos();
+
+			parser.verificaVariaveisNaoUtilizadas();
 			
 			System.out.println("Compilation Successful");
-			
-			parser.exibeComandos();
 			
 			parser.generateCode();
 			
@@ -43,8 +49,6 @@ public class MainClass {
 		catch(Exception ex) {
 			ex.printStackTrace();
 			System.err.println("ERROR "+ex.getMessage());
-		}
-		
+		}		
 	}
-
 }

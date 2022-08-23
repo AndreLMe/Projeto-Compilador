@@ -35,7 +35,6 @@ public class IsiProgram {
 		catch(Exception ex) {
 			ex.printStackTrace();
 		}
-
 	}
 
 	public IsiSymbolTable getVarTable() {
@@ -61,5 +60,4 @@ public class IsiProgram {
 	public void setProgramName(String programName) {
 		this.programName = programName;
 	}
-
 }

@@ -10,7 +10,6 @@ public class IsiSymbolTable {
 	
 	public IsiSymbolTable() {
 		map = new HashMap<String, IsiSymbol>();
-		
 	}
 	
 	public void add(IsiSymbol symbol) {
@@ -31,8 +30,5 @@ public class IsiSymbolTable {
 			lista.add(symbol);
 		}
 		return lista;
-	}
-
-	
-	
+	}	
 }
