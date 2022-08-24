@@ -15,3 +15,4 @@ Grupo composto por:
 * Verificar variáveis não declaradas (Feito).
 * Verificação de tipos (Feito).
 * Comandos de leitura do teclado e de impressão na tela (Feito).
+* Geração de pelo menos 1 linguagem destino (C/Java/Python) (Feito. JAVA)
