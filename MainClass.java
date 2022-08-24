@@ -6,7 +6,6 @@ double  a;
 double  b;
 double  c;
 double  d;
-double  f;
 String  t1;
 b = 2.0;
 a= _key.nextDouble();
@@ -16,7 +15,7 @@ if (a>b) {
 System.out.println(a);System.out.println(b);}else {
 System.out.println(b);}
 
-c = 3;
+c = 7;
 d = 1;
 
 while(c>d){

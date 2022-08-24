@@ -1,6 +1,6 @@
 programa
 
-  declare numero a, b, c, d, f;
+  declare numero a, b, c, d;
   declare texto  t1;
 
   b = 2.0;
@@ -21,7 +21,7 @@ programa
      escreva (b);
   }
 
-  c=3;
+  c=7;
   d=1;
   
   enquanto(c>d)

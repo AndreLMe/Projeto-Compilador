@@ -239,6 +239,11 @@ termo		: ID {
               {
               	_exprContent += _input.LT(-1).getText();
               }
+			|
+			  TEXT
+			  {
+				_exprContent += _input.LT(-1).getText();
+			  }
 			;
 	
 AP	: '('
@@ -273,6 +278,9 @@ ID	: [a-z] ([a-z] | [A-Z] | [0-9])*
 	;
 	
 NUMBER	: [0-9]+ ('.' [0-9]+)?
+		;
+
+TEXT	: ('"'.*?'"')
 		;
 		
 WS	: (' ' | '\t' | '\n' | '\r') -> skip;
