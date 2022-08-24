@@ -51,7 +51,7 @@ public class IsiLangParser extends Parser {
 		return new String[] {
 			null, "'programa'", "'fimprog;'", "'declare'", "'numero'", "'texto'", 
 			"'enquanto'", "'leia'", "'escreva'", "'se'", "'senao'", "'('", "')'", 
-			"';'", null, "'='", "','", "'{'", "'}'"
+			"';'", null, "':='", "','", "'{'", "'}'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -710,8 +710,6 @@ public class IsiLangParser extends Parser {
 			match(SC);
 
 			              	IsiVariable var = (IsiVariable)symbolTable.get(_readID);
-			              	var.setValue("");
-
 			              	CommandLeitura cmd = new CommandLeitura(_readID, var);
 			              	stack.peek().add(cmd);
 			              
@@ -827,10 +825,17 @@ public class IsiLangParser extends Parser {
 			setState(110);
 			match(SC);
 
-			               	 IsiVariable var = (IsiVariable)symbolTable.get(_exprID);
-			              	 var.setValue(_exprContent);
-			               	 CommandAtribuicao cmd = new CommandAtribuicao(_exprID, _exprContent);
-			               	 stack.peek().add(cmd);
+							 if(_exprContent == "")
+							 {
+								throw new IsiSemanticException("A variável "+ _exprID + " não recebeu atribuição.");
+							 }
+							 else
+							 {
+								IsiVariable var = (IsiVariable)symbolTable.get(_exprID);
+			              	 	var.setValue(_exprContent);
+			               	 	CommandAtribuicao cmd = new CommandAtribuicao(_exprID, _exprContent);
+			               	 	stack.peek().add(cmd);
+							 }
 			               
 			}
 		}

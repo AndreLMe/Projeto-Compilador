@@ -156,8 +156,6 @@ cmdleitura	: 'leia' AP
 
               {
               	IsiVariable var = (IsiVariable)symbolTable.get(_readID);
-              	var.setValue("");
-
               	CommandLeitura cmd = new CommandLeitura(_readID, var);
               	stack.peek().add(cmd);
               };
@@ -186,10 +184,17 @@ cmdattrib	:  ID { verificaID(_input.LT(-1).getText());
                expr
                SC
                {
-               	 IsiVariable var = (IsiVariable)symbolTable.get(_exprID);
-              	 var.setValue(_exprContent);
-               	 CommandAtribuicao cmd = new CommandAtribuicao(_exprID, _exprContent);
-               	 stack.peek().add(cmd);
+				 if(_exprContent == "")
+				 {
+					throw new IsiSemanticException("A variável "+ _exprID + " não recebeu atribuição.");
+				 }
+				 else
+				 {
+					IsiVariable var = (IsiVariable)symbolTable.get(_exprID);
+              	 	var.setValue(_exprContent);
+               	 	CommandAtribuicao cmd = new CommandAtribuicao(_exprID, _exprContent);
+               	 	stack.peek().add(cmd);
+				 }
                }
 			;
 
@@ -258,7 +263,7 @@ SC	: ';'
 OP	: '+' | '-' | '*' | '/'
 	;
 	
-ATTR : '='
+ATTR : ':='
 	 ;
 	 
 VIR  : ','

@@ -3,11 +3,11 @@ programa
   declare numero a, b, c, d, f;
   declare texto  t1;
 
-  b = 2.0;
+  b := 2.0;
   leia(a);
   leia(b);
 
-  a = 1 + 2.0 * 3 / b;
+  a := 1 + 2.0 * 3 / b;
   
   se( a > b )
   {
@@ -19,12 +19,12 @@ programa
      escreva (b);
   }
 
-  c=3;
-  d=1;
+  c := 3;
+  d := 1;
 
   enquanto (c>d)
   {
     escreva (d);
-    d = d+1;
+    d := d+1;
   }
 fimprog;
