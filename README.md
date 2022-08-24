@@ -12,7 +12,8 @@ Grupo composto por:
 * Estrutura de controle de decisão (if/else) (Feito).
 * Estrutura de repetição (enquanto) (Feito).
 * Expressões envolvendo opereadores matemáticos (Feito).
+* Aceita números decimais (Feito).
 * Verificar variáveis não declaradas (Feito).
-* Verificação de tipos (Feito).
+* Verifica se variável declarada foi usada (Feito).
 * Comandos de leitura do teclado e de impressão na tela (Feito).
 * Geração de pelo menos 1 linguagem destino (C/Java/Python) (Feito. JAVA)
