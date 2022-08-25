@@ -1,7 +1,13 @@
 programa
 
-  declare numero a, b, c, d, f;
-  
+  declare numero a, b;
+
+  b := 1;
+  a := 1;
+
+  escreva(a);
+  escreva(b);
+
   leia(a);
   leia(b);
   
@@ -15,4 +21,4 @@ programa
      escreva (b);
   }
   
-fimprog
+fimprog;

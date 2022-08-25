@@ -1,17 +1,15 @@
 programa
 
-  declare numero a, b, c, d, f;
-  declare texto  t1;
+  declare numero a, b;
 
-  b := 2.0;
+  b := 1;
+  a := 1;
+
+  escreva(a);
+  escreva(b);
+
   leia(a);
   leia(b);
-
-  t1 = "Ola Prof Isidro";
-
-  escreva(t1);
-
-  a := 1 + 2.0 * 3 / b;
   
   se( a > b )
   {
@@ -22,13 +20,5 @@ programa
   {
      escreva (b);
   }
-
-  c := 5;
-  d := 1;
-
-  enquanto (c>d)
-  {
-    escreva (d);
-    d := d+1;
-  }
+  
 fimprog;
