@@ -17,3 +17,7 @@ Grupo composto por:
 * Verifica se variável declarada foi usada (Feito).
 * Comandos de leitura do teclado e de impressão na tela (Feito).
 * Geração de pelo menos 1 linguagem destino (C/Java/Python) (Feito. JAVA)
+
+### Link do Vídeo 
+
+https://youtu.be/MSfmBd18bWw
