@@ -1,0 +1,18 @@
+programa
+
+  declare numero a, b, c, d, f;
+  
+  leia(a);
+  leia(b);
+  
+  se( a > b )
+  {
+     escreva (a);
+     escreva(b);     
+  }
+  senao
+  {
+     escreva (b);
+  }
+  
+fimprog

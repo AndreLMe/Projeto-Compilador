@@ -7,6 +7,10 @@ programa
   leia(a);
   leia(b);
 
+  t1 = "Ola Prof Isidro";
+
+  escreva(t1);
+
   a := 1 + 2.0 * 3 / b;
   
   se( a > b )
@@ -19,7 +23,7 @@ programa
      escreva (b);
   }
 
-  c := 3;
+  c := 5;
   d := 1;
 
   enquanto (c>d)
